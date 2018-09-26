@@ -1,7 +1,13 @@
 class Face  {
   
-public void display() {
+ void paint() {
   ////////////////////////////////////////SHAPE FACE///////////////////
+  
+pushMatrix();
+background(204,255,204);
+translate(mouseX - 170,mouseY - 170);
+  
+  
 noStroke();                
 fill( 242, 181, 165);     
 ellipse (200, 200, 300, 300);
@@ -59,6 +65,10 @@ noStroke();
 fill(222, 105, 105);
 rect (190, 180, 30, 70, 10);
 
+noStroke();
+fill(242, 181, 165,100);
+
+popMatrix();
 
   
   
